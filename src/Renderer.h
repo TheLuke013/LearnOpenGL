@@ -3,6 +3,8 @@
 
 #include <GL/glew.h>
 
+#include <iostream>
+
 #define ASSERT(x) if (!(x)) std::abort();
 #define GLCall(x) { GLClearError();\
     x;\
