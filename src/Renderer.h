@@ -2,7 +2,6 @@
 #define RENDERER_CLASS_H
 
 #include <GL/glew.h>
-
 #include <iostream>
 
 #define ASSERT(x) if (!(x)) std::abort();
@@ -12,5 +11,12 @@
 
 void GLClearError();
 bool GLLogCall(const char* function, const char* file, int line);
+
+class Renderer
+{
+public:
+
+
+};
 
 #endif
