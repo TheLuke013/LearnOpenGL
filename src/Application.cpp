@@ -13,9 +13,9 @@
 #include <glm.hpp>
 #include <gtc/matrix_transform.hpp>
 
-#include "imgui/imgui.h"
-#include "imgui/imgui_impl_glfw.h"
-#include "imgui/imgui_impl_opengl3.h"
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
 #include "tests/TestClearColor.h"
 #include "tests/TestTexture2D.h"

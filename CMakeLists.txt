@@ -4,7 +4,9 @@ set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
 project ("LearnOpenGL")
 
-file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS 
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/*.cpp")
 
 add_definitions(-DGLEW_STATIC)
 
@@ -26,7 +28,8 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "ThirdParty/glfw/include"
     "ThirdParty/glew/include"
     "ThirdParty/stb"
-    "ThirdParty/glm")
+    "ThirdParty/glm"
+    "ThirdParty/imgui")
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/glfw/lib/glfw3.lib
